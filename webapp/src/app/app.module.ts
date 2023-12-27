@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { TechComponent } from './tech/tech.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     TechComponent,
-    LoginComponent
+
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AuthenticationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

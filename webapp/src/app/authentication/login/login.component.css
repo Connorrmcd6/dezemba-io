@@ -1,0 +1,52 @@
+.login-third {
+    position: fixed; /* Keeps the div in place */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height of the viewport */
+    width: calc(33.33% - 20px); /* Adjust as needed */
+    background-color: #063684; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-form-container {
+    background-color: #DCEBFE; 
+    border-radius: 16px;
+    height: 66.6%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    text-align: center; /* Center align the text */
+    font-weight: bold; /* Make the text bold */
+    color: #063684; /* Set the default color for most of the title */
+    position: relative; /* Position relative for pseudo-element usage */
+    font-family:  "Londrina Solid", Helvetica, Arial;
+    /* Adjust as needed */
+    font-size: 24px; /* Example font size */
+    margin-bottom: 20px; /* Example margin */
+
+}
+
+.form-title::after {
+    content: attr(data-text);
+    color: #F00ACA;
+    font-family: "Londrina Solid", Helvetica, Arial;
+  }
+
+.form-links {
+
+}
+
+.form-input {
+
+}
+
+.form-button {
+
+}
