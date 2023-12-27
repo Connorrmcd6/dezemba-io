@@ -1,0 +1,90 @@
+/* Form Title */
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    color: #063684;
+    position: relative;
+    font-family: "Londrina Solid", Helvetica, Arial;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-title::after {
+    content: attr(data-text);
+    color: #F00ACA;
+    font-family: "Londrina Solid", Helvetica, Arial;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: linear-gradient(to bottom, #7BACF9, #CE59F8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Login Form */
+  .login-form {
+    border-radius: 16px;
+    width: 300px;
+    padding: 10px 20px 20px;
+    background-color: #dcebfd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  /* Login Input */
+  .login-input {
+    position: relative;
+    border: none;
+    height: 40px;
+    width: calc(80% - 10px);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    padding-left: 12px; /* Adjust the value as needed */
+  }
+  
+  .login-input input {
+    padding: 8px;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-input input::placeholder {
+    color: #02102c;
+    opacity: 0.25;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+  }
+  /* Sign-in Button */
+  .signin-button {
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background: linear-gradient(to top right, #F00ACA, #CE59F8);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    width: calc(80% - 10px);
+  }
+  
+  /* Login Bottom Text */
+  .login-bottom-text {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    color: #063684;
+  }
+  
+  .login-bottom-text a:hover {
+    text-decoration: underline;
+    color: #F00ACA;
+  }
+  
