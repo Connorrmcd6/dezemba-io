@@ -2,7 +2,7 @@
 .form-title {
     text-align: center;
     font-weight: bold;
-    color: #063684;
+    color: var(--primary-1);
     position: relative;
     font-family: "Londrina Solid", Helvetica, Arial;
     font-size: 24px;
@@ -11,13 +11,13 @@
   
   .form-title::after {
     content: attr(data-text);
-    color: #F00ACA;
+    color: var(--accent-1);
     font-family: "Londrina Solid", Helvetica, Arial;
   }
   
   /* Login Container */
   .login-container {
-    background: linear-gradient(to bottom, #7BACF9, #CE59F8);
+    background: linear-gradient(to bottom, var(--primary-2), var(--secondary-1));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
     border-radius: 16px;
     width: 300px;
     padding: 20px;
-    background-color: #dcebfd;
+    background-color: var(--background-1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
   }
@@ -55,7 +55,7 @@
   }
   
   .login-input input::placeholder {
-    color: #02102c;
+    color: var(--text-1);
     opacity: 0.25;
     font-size: 12px;
     font-family: Helvetica, sans-serif;
@@ -67,17 +67,18 @@
     border-radius: 16px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border: none;
-    background: linear-gradient(to top right, #F00ACA, #CE59F8);
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
     font-weight: bold;
     font-size: 16px;
     font-family: Helvetica, sans-serif;
-    color: #ffffff;
+    color: white;
     width: calc(80% - 10px);
   }
 
   .signin-button:active {
     box-shadow: none;
-    background: #7BACF9
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    opacity: 0.5;
   }
   
   /* Login Bottom Text */
@@ -85,12 +86,12 @@
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     font-size: 12px;
-    color: #063684;
+    color: var(--text-1);
   }
   
   .login-bottom-text a:hover {
     text-decoration: underline;
-    color: #F00ACA;
+    color: var(--accent-1);
   }
   
 /* Logo */
