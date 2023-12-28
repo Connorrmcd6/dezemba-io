@@ -1,4 +1,16 @@
-# dezemba
+# dezemba.io
+
+![dezemba.io]("webapp/src/assets/svg/Readme-banner.svg")
+dezemba.io is a specialized leave tracking software designed to streamline and simplify leave management for small businesses in South Africa. With intuitive features tailored to the local business landscape, Dezemba.io helps organizations efficiently manage employee leave, ensuring compliance with labor laws and enhancing workforce productivity.
+
+## Features
+
+- **Leave Requests**: Employees can easily request leave through the platform, specifying the type of leave (annual, sick, maternity, etc.) and desired dates.
+- **Approval Workflow**: Managers or designated approvers receive notifications for leave requests, enabling quick review and approval within the system.
+- **Leave Balances**: Real-time tracking of leave balances for each employee, ensuring accurate availability information.
+- **Calendar View**: Visual representation of leave schedules to assist in planning and preventing conflicts.
+- **Reporting**: Comprehensive reports for leave utilization, trends, and compliance, facilitating decision-making and HR analytics.
+- **Customization**: Configurable settings to align with South African labor laws, public holidays, and company-specific policies.
 
 ## Environment setup
 
@@ -22,6 +34,7 @@ docker-compose --version
 
 In the project directory run the command (you might
 need to prepend it with `sudo` depending on your setup):
+
 ```sh
 docker-compose -f docker-compose-dev.yml up
 ```
@@ -36,6 +49,7 @@ Navigate to the `server` folder and start the back end:
 cd server
 go run server.go
 ```
+
 The back end will serve on http://localhost:8080.
 
 Navigate to the `webapp` folder, install dependencies,
@@ -46,13 +60,16 @@ cd webapp
 npm install
 npm start
 ```
+
 The application will be available on http://localhost:3000.
- 
+
 ## Start in production mode
 
 Perform:
+
 ```sh
 docker-compose up
 ```
+
 This will build the application and start it together with
 its database. Access the application on http://localhost:8080.
