@@ -1,6 +1,3 @@
-# dezemba.io
-
-![dezemba.io]("./webapp/src/assets/svg/Readme-banner.svg?sanitize=true")
 <img src="./webapp/src/assets/svg/Readme-banner.svg?sanitize=true">
 dezemba.io is a specialized leave tracking software designed to streamline and simplify leave management for small businesses in South Africa. With intuitive features tailored to the local business landscape, Dezemba.io helps organizations efficiently manage employee leave, ensuring compliance with labor laws and enhancing workforce productivity.
 
