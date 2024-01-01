@@ -1,1 +1,34 @@
-<p>register works!</p>
+<div class="register-container">
+    <form class="register-form">
+        <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
+        <mat-stepper class="form-stepper">
+            <mat-step>
+                <ng-template matStepLabel>Personal Details</ng-template>
+                <div class="form-group">
+                    <input class="register-input" type="email" id="username" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button mat-button matStepperNext class="reg-step-button">NEXT</button>
+            </mat-step>
+
+            <mat-step>
+                <ng-template matStepLabel>Organisation Details</ng-template>
+                <div class="form-group">
+                    <input class="register-input" type="text" id="organisation" name="organisation" placeholder="Organisation Name" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="text" id="role" name="role" placeholder="Role" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="text" id="country" name="country" placeholder="Country" required>
+                </div>
+                <button class="reg-step-button" type="submit">CREATE ACCOUNT</button>
+            </mat-step>
+        </mat-stepper>
+    </form>
+</div>

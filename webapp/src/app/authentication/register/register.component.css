@@ -1,0 +1,100 @@
+/* Register Container */
+.register-container {
+    background: linear-gradient(to bottom, var(--primary-2), var(--secondary-1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Register Form */
+  .register-form {
+    border-radius: 16px;
+    width: 300px;
+    background-color: var(--background-1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  /* Logo */
+  .logo {
+    margin-top: 20px; /* Adjust margin between logo and form */
+    /* Add any necessary styles for the logo */
+  }
+  
+  /* Form Title */
+  .form-title {
+    font-weight: bold;
+    color: var(--primary-1);
+    font-family: "Londrina Solid", Helvetica, Arial;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-title::after {
+    content: attr(data-text);
+    color: var(--accent-1);
+  }
+  
+  /* Register Input */
+  .register-input {
+    border: none;
+    height: 40px;
+    width: calc(100% - 24px); /* Adjust width calculation */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    padding-left: 8px;
+  }
+  
+  .register-input input {
+    padding: 8px;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .register-input input::placeholder {
+    color: var(--text-1);
+    opacity: 0.25;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* Registration Step Button */
+  .reg-step-button {
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    width: calc(100% - 24px); /* Adjust width calculation */
+  }
+  
+  /* Form Stepper */
+  .form-stepper {
+    background-color: var(--background-1);
+    border-radius: 16px;
+  }
+  
+  /* Style active and selected step label */
+  .mat-step-label.mat-step-label-active.mat-step-label-selected {
+    color: var(--accent-1);
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+  }
+  
+  /* General style for step labels */
+  .mat-step-label {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+  }
+  

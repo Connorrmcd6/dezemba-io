@@ -57,3 +57,5 @@ body {
     --background-2: #011023;
     --text-2: #D3E1FD;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

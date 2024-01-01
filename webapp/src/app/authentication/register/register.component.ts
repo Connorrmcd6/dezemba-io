@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+  lastThreeLetters: string = "";
 
+  constructor() {
+    const titleText = 'Welcome to dezemba.io'; // Replace with your actual title
+    if (titleText.length > 3) {
+      this.lastThreeLetters = titleText.slice(-3);
+    }
+  }
 }
