@@ -1,13 +1,15 @@
 <div class="register-container">
     <form class="register-form">
         <!-- Back button -->
-        <div class="back-button-container">
-            <div class="back-button">
-                <mat-icon aria-label="Back">arrow_back</mat-icon>
-                <span>Sign In</span>
+        <nav>
+            <div class="back-button-container">
+                <div class="back-button" (click)="navigateToLogin()">
+                    <mat-icon aria-label="Back">arrow_back</mat-icon>
+                    <span>Sign In</span>
+                </div>
             </div>
-        </div>
-
+        </nav>
+        
         <!-- Logo -->
         <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
 

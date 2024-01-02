@@ -1,13 +1,14 @@
 /* Form Title */
-.form-title {
-    text-align: center;
-    font-weight: bold;
-    color: var(--primary-1);
-    position: relative;
-    font-family: "Londrina Solid", Helvetica, Arial;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+.login-container .login-form .form-title {
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-1);
+  position: relative;
+  font-family: "Londrina Solid", Helvetica, Arial; /* Apply Londrina Solid font */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
   
   .form-title::after {
     content: attr(data-text);
@@ -87,8 +88,9 @@
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     font-size: 12px;
-    color: var(--text-1);
+    color: var(--primary-1);
     transition: color 0.3s ease;
+    cursor: pointer;
   }
   
   .login-bottom-text a:hover {
@@ -112,7 +114,7 @@
 
 .back-button mat-icon {
   color: var(--primary-1);
-  margin-right: 8px;
+  margin-right: 4px;
   cursor: pointer;
   transition: color 0.3s ease;
   vertical-align: middle
@@ -126,6 +128,8 @@
   /* Add vertical alignment */
   display: inline-flex;
   align-items: center;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 /* Hover effect */

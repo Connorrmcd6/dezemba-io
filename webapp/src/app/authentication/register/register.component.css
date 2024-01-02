@@ -109,11 +109,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
 }
 
 .back-button mat-icon {
   color: var(--primary-1);
-  margin-right: 8px;
+  margin-right: 4px;
   cursor: pointer;
   transition: color 0.3s ease;
   /* Add vertical alignment */
@@ -128,6 +129,8 @@
   /* Add vertical alignment */
   display: inline-flex;
   align-items: center;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 /* Hover effect */

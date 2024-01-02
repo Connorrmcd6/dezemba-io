@@ -28,9 +28,13 @@
         <button class="signin-button" type="submit">SIGN IN</button>
 
         <!-- Forgot Password Link -->
-        <p class="login-bottom-text"><a href="#forgot">Forgot Password</a></p>
+        <nav>
+            <p class="login-bottom-text"><a href="#forgot">Forgot Password (non-functional)</a></p>
+        </nav>
 
         <!-- Create Account Link -->
-        <p class="login-bottom-text"><a href="#create">No account? Create one</a></p>
+        <nav>
+            <p class="login-bottom-text"><a (click)="navigateToRegister()">No account? Create one</a></p>
+        </nav>
     </form>
 </div>
