@@ -23,4 +23,7 @@ export class LoginComponent {
   navigateToLanding(): void {
     this.router.navigate(['/landing']); // Change '/register' to your actual register path
   }
+  navigateToNotFound(): void {
+    this.router.navigate(['/**']); // Change '/register' to your actual register path
+  }
 }
