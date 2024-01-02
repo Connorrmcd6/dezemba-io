@@ -2,8 +2,8 @@
     <form class="register-form">
         <!-- Back button -->
         <nav>
-            <div class="back-button-container">
-                <div class="back-button" (click)="navigateToLogin()">
+            <div class="back-button-container" (click)="navigateToLogin()" role="button" tabindex="0">
+                <div class="back-button">
                     <mat-icon aria-label="Back">arrow_back</mat-icon>
                     <span>Sign In</span>
                 </div>
@@ -14,7 +14,7 @@
         <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
 
         <!-- Registration Steps -->
-        <mat-stepper class="form-stepper">
+        <mat-stepper class="form-stepper" linear>
             <!-- Step 1: Personal Details -->
             <mat-step>
                 <ng-template matStepLabel>Personal Details</ng-template>

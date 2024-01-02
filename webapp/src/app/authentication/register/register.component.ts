@@ -12,7 +12,8 @@ export class RegisterComponent {
   constructor(private router: Router) {
   }
 
+  // Navigate to the login page
   navigateToLogin(): void {
-      this.router.navigate(['/login']); // Change '/login' to your actual login path
+    this.router.navigate(['/login']); // Replace '/login' with your actual login route
   }
 }
