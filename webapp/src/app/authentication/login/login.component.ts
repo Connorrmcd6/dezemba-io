@@ -20,4 +20,7 @@ export class LoginComponent {
   navigateToRegister(): void {
     this.router.navigate(['/register']); // Change '/register' to your actual register route
   }
+  navigateToLanding(): void {
+    this.router.navigate(['/landing']); // Change '/register' to your actual register path
+  }
 }

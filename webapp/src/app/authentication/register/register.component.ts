@@ -8,14 +8,8 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class RegisterComponent {
-  
-  lastThreeLetters: string = "";
 
   constructor(private router: Router) {
-    const titleText = 'Welcome to dezemba.io'; // Replace with your actual title
-    if (titleText.length > 3) {
-      this.lastThreeLetters = titleText.slice(-3);
-    }
   }
 
   navigateToLogin(): void {
