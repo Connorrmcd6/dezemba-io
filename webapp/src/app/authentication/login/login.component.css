@@ -1,13 +1,14 @@
 /* Form Title */
-.form-title {
-    text-align: center;
-    font-weight: bold;
-    color: var(--primary-1);
-    position: relative;
-    font-family: "Londrina Solid", Helvetica, Arial;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+.login-container .login-form .form-title {
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-1);
+  position: relative;
+  font-family: "Londrina Solid", Helvetica, Arial; /* Apply Londrina Solid font */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
   
   .form-title::after {
     content: attr(data-text);
@@ -62,17 +63,18 @@
   }
   /* Sign-in Button */
   .signin-button {
-    height: 50px;
+    height: 40px;
     margin: 10px auto;
-    border-radius: 16px;
+    border-radius: 25px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border: none;
     background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif;
     color: white;
     width: calc(80% - 10px);
+    cursor: pointer;
   }
 
   .signin-button:active {
@@ -86,16 +88,52 @@
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     font-size: 12px;
-    color: var(--text-1);
+    color: var(--primary-1);
+    transition: color 0.3s ease;
+    cursor: pointer;
   }
   
   .login-bottom-text a:hover {
     text-decoration: underline;
     color: var(--accent-1);
+    transition: color 0.3s ease;
   }
   
 /* Logo */
 .logo {
-  margin-right: 20px; /* Adjust margin between logo and form */
+  margin-right: 0px; /* Adjust margin between logo and form */
   /* Add any necessary styles for the logo */
+}
+
+/* Back Button */
+.back-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.back-button mat-icon {
+  color: var(--primary-1);
+  margin-right: 4px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  vertical-align: middle
+}
+
+.back-button span {
+  font-size: 12px;
+  color: var(--primary-1);
+  font-family: Helvetica, sans-serif;
+  transition: color 0.3s ease;
+  /* Add vertical alignment */
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.back-button-container:hover .back-button mat-icon,
+.back-button-container:hover .back-button span {
+  color: var(--accent-1);
 }

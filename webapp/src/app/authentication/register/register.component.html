@@ -1,1 +1,49 @@
-<p>register works!</p>
+<div class="register-container">
+    <form class="register-form">
+        <!-- Back button -->
+        <nav>
+            <div class="back-button-container" (click)="navigateToLogin()" role="button" tabindex="0">
+                <div class="back-button">
+                    <mat-icon aria-label="Back">arrow_back</mat-icon>
+                    <span>Sign In</span>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Logo -->
+        <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
+
+        <!-- Registration Steps -->
+        <mat-stepper class="form-stepper" linear>
+            <!-- Step 1: Personal Details -->
+            <mat-step>
+                <ng-template matStepLabel>Personal Details</ng-template>
+                <div class="form-group">
+                    <input class="register-input" type="email" id="username" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button mat-button matStepperNext class="reg-step-button">NEXT</button>
+            </mat-step>
+
+            <!-- Step 2: Organisation Details -->
+            <mat-step>
+                <ng-template matStepLabel>Organisation Details</ng-template>
+                <div class="form-group">
+                    <input class="register-input" type="text" id="organisation" name="organisation" placeholder="Organisation Name" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="text" id="role" name="role" placeholder="Role" required>
+                </div>
+                <div class="form-group">
+                    <input class="register-input" type="text" id="country" name="country" placeholder="Country" required>
+                </div>
+                <button class="reg-step-button" type="submit">CREATE ACCOUNT</button>
+            </mat-step>
+        </mat-stepper>
+    </form>
+</div>
