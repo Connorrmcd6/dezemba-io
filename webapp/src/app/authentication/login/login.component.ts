@@ -25,7 +25,7 @@ export class LoginComponent {
 
   // Navigate to the landing page
   navigateToLanding(): void {
-    this.router.navigate(['/landing']); // Replace '/landing' with your actual landing path
+    this.router.navigate(['/landing-page']); // Replace '/landing' with your actual landing path
   }
 
   // Navigate to the not-found page (ensure this path exists or add error handling)

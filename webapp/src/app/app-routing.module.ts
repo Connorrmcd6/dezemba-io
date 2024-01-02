@@ -6,8 +6,8 @@ import { LandingComponent } from './landing/landing/landing.component';
 import { NotFoundComponent } from './landing/not-found/not-found.component';
 
 const routes: Routes = [
-  {path: 'landing', component: LandingComponent},
-  { path: '', redirectTo: 'landing', pathMatch: 'full' },
+  {path: 'landing-page', component: LandingComponent},
+  { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {path: '**', component: NotFoundComponent}

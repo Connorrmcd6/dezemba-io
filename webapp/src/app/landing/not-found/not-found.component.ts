@@ -11,7 +11,7 @@ export class NotFoundComponent {
   constructor(private router: Router) {
   }
   navigateToLanding(): void {
-    this.router.navigate(['/landing']); // Change '/register' to your actual register path
+    this.router.navigate(['/landing-page']); // Change '/register' to your actual register path
   }
 
 }
