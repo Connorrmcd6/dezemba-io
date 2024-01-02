@@ -59,3 +59,12 @@ body {
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* Global */
+:root {
+    --font-primary: "Londrina Solid", Helvetica, Arial;
+    --font-secondary: Helvetica, sans-serif;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --accent-gradient: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+  }

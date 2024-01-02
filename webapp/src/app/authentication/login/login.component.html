@@ -1,8 +1,8 @@
 <div class="login-container">
     <form class="login-form">
         <!-- Back button -->
-        <div class="back-button-container">
-            <div class="back-button" (click)="navigateToLanding()">
+        <div class="back-button-container" (click)="navigateToLanding()" role="button" tabindex="0">
+            <div class="back-button">
                 <mat-icon aria-label="Back">arrow_back</mat-icon>
                 <span>Back</span>
             </div>
@@ -27,14 +27,13 @@
         <!-- Sign In Button -->
         <button class="signin-button" type="submit">SIGN IN</button>
 
-        <!-- Forgot Password Link -->
+        <!-- Navigation Links -->
         <nav>
-            <p class="login-bottom-text"><a (click)="navigateToNotFound()">Forgot Password (non-functional)</a></p>
-        </nav>
-
-        <!-- Create Account Link -->
-        <nav>
-            <p class="login-bottom-text"><a (click)="navigateToRegister()">No account? Create one</a></p>
+            <!-- Forgot Password Link -->
+            <p class="login-bottom-text"><a (click)="navigateToNotFound()" role="button" tabindex="0">Forgot Password (non-functional)</a></p>
+            
+            <!-- Create Account Link -->
+            <p class="login-bottom-text"><a (click)="navigateToRegister()" role="button" tabindex="0">No account? Create one</a></p>
         </nav>
     </form>
 </div>
