@@ -1,23 +1,36 @@
 <div class="login-container">
     <form class="login-form">
-    <!-- Back button -->
-    <div class="back-button-container">
-        <div class="back-button">
-            <mat-icon aria-label="Back">arrow_back</mat-icon>
-            <span>Back</span>
+        <!-- Back button -->
+        <div class="back-button-container">
+            <div class="back-button">
+                <mat-icon aria-label="Back">arrow_back</mat-icon>
+                <span>Back</span>
+            </div>
         </div>
-    </div>
-    <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
-    <h2 class="form-title" [attr.data-text]="lastThreeLetters">Welcome to dezemba</h2>
-    <div>
-        <input class="login-input" type="text" id="username" name="email" placeholder="Email" required >
-    </div>
-    <div>
-        <input class="login-input" type="password" id="password" name="password" placeholder="Password" required>
-    </div>
-    <button class="signin-button" type="submit">SIGN IN</button>
-    <!-- <p class="login-bottom-text"><a href="#saml">Sign in with SAML SSO</a></p> -->
-    <p class="login-bottom-text"><a href="#forgot">Forgot Password</a></p>
-    <p class="login-bottom-text"><a href="#create">No account? Create one</a></p>
+
+        <!-- Logo -->
+        <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
+
+        <!-- Form Title -->
+        <h2 class="form-title" [attr.data-text]="lastThreeLetters">Welcome to dezemba</h2>
+
+        <!-- Email Input -->
+        <div>
+            <input class="login-input" type="text" id="username" name="email" placeholder="Email" required>
+        </div>
+
+        <!-- Password Input -->
+        <div>
+            <input class="login-input" type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <!-- Sign In Button -->
+        <button class="signin-button" type="submit">SIGN IN</button>
+
+        <!-- Forgot Password Link -->
+        <p class="login-bottom-text"><a href="#forgot">Forgot Password</a></p>
+
+        <!-- Create Account Link -->
+        <p class="login-bottom-text"><a href="#create">No account? Create one</a></p>
     </form>
-  </div>
+</div>

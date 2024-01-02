@@ -66,14 +66,14 @@
 
 /* Registration Step Button */
 .reg-step-button {
-  height: 50px;
+  height: 40px;
   margin: 10px auto;
-  border-radius: 16px;
+  border-radius: 25px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border: none;
   background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Helvetica, sans-serif;
   color: white;
   width: calc(100% - 24px); /* Adjust width calculation */
@@ -112,13 +112,12 @@
   cursor: pointer;
   transition: color 0.3s ease;
   /* Add vertical alignment */
-  display: inline-flex;
-  align-items: center;
+  vertical-align: middle
 }
 
 .back-button span {
   font-size: 12px;
-  color: var(--text-1);
+  color: var(--primary-1);
   font-family: Helvetica, sans-serif;
   transition: color 0.3s ease;
   /* Add vertical alignment */
