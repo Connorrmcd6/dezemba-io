@@ -138,3 +138,19 @@
 .back-button-container:hover .back-button span {
   color: var(--accent-1);
 }
+
+/* Login Bottom Text */
+.login-bottom-text {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--primary-1);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.login-bottom-text a:hover {
+  text-decoration: underline;
+  color: var(--accent-1);
+  transition: color 0.3s ease;
+}
