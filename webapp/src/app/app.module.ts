@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,

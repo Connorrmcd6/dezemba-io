@@ -73,6 +73,7 @@
     font-family: Helvetica, sans-serif;
     color: white;
     width: calc(80% - 10px);
+    cursor: pointer;
   }
 
   .signin-button:active {
@@ -87,15 +88,50 @@
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     color: var(--text-1);
+    transition: color 0.3s ease;
   }
   
   .login-bottom-text a:hover {
     text-decoration: underline;
     color: var(--accent-1);
+    transition: color 0.3s ease;
   }
   
 /* Logo */
 .logo {
-  margin-right: 20px; /* Adjust margin between logo and form */
+  margin-right: 0px; /* Adjust margin between logo and form */
   /* Add any necessary styles for the logo */
+}
+
+/* Back Button */
+.back-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.back-button mat-icon {
+  color: var(--primary-1);
+  margin-right: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  /* Add vertical alignment */
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-button span {
+  font-size: 12px;
+  color: var(--text-1);
+  font-family: Helvetica, sans-serif;
+  transition: color 0.3s ease;
+  /* Add vertical alignment */
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Hover effect */
+.back-button-container:hover .back-button mat-icon,
+.back-button-container:hover .back-button span {
+  color: var(--accent-1);
 }
