@@ -1,0 +1,127 @@
+.landing-container {
+    background: var(--background-1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .top-bar {
+    background-color: white; /* Setting the background color to white */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Applying a drop shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky; /* Making the top-bar sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    width: 100%; /* Spans the entire width */
+    z-index: 100; /* Adjust z-index if needed */
+  }
+  
+  .logo {
+    height: 70px;
+    padding-right: 24px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  .signin-button {
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .signin-button:active {
+    box-shadow: none;
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    opacity: 0.5;
+  }
+
+  .register-button {
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 2px solid var(--accent-1); /* Solid border */
+    background: rgba(240, 10, 202, 0.2); /* Background color with 50% opacity */
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: rgba(240, 10, 202, 1); /* Full opacity for text */
+    width: 100px;
+    cursor: pointer;
+  }
+  
+
+  .register-button:active {
+    box-shadow: none;
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    opacity: 1;
+    color:white;
+  }
+
+  /* CSS for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: var(--primary-1);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-section {
+    display: flex;
+    gap: 16px;
+  }
+
+  .dropbtn {
+    cursor: pointer;
+    color: var(--primary-1);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+  }

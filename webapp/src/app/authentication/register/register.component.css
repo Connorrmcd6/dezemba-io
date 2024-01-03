@@ -80,6 +80,13 @@
   cursor: pointer;
 }
 
+.reg-step-button:active {
+  box-shadow: none;
+  background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+  opacity: 0.5;
+}
+
+
 /* Form Stepper */
 .register-container .register-form .form-stepper {
   background-color: var(--background-1);

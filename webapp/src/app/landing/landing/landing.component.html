@@ -1,4 +1,31 @@
-<div>
-    <button (click)="navigateToLogin()">Login</button>
-    <button (click)="navigateToRegister()">Register</button>
-</div>
+<div class="landing-container">
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+      <div class="left-section">
+        <img class="logo" src="../../assets/svg/dezemba-logo-with-text.svg" alt="Logo">
+        <div class="dropdown">
+          <button class="dropbtn">Products</button>
+          <div class="dropdown-content">
+            <a href="#">Product 1</a>
+            <a href="#">Product 2</a>
+            <a href="#">Product 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Pricing</button>
+          <div class="dropdown-content">
+            <a href="#">Plan 1</a>
+            <a href="#">Plan 2</a>
+            <a href="#">Plan 3</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <button class="signin-button" (click)="navigateToLogin()">Login</button>
+        <button class="register-button" (click)="navigateToRegister()">Register</button>
+      </div>
+    </div>
+  
+    <!-- Other content of the landing page goes here -->
+  </div>
+  
