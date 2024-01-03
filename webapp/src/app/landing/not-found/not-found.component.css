@@ -1,0 +1,65 @@
+.not-found-container {
+    text-align: center;
+    padding: 100px;
+    background: var(--background-1);
+    height: 100vh;
+  }
+  
+  .not-found-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+    color: var(--primary-1);
+  }
+  
+  .not-found-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Helvetica', sans-serif;
+    color: var(--primary-1);
+  }
+  
+  .landing-button {
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  .landing-button:active {
+    box-shadow: none;
+    background: linear-gradient(to top right, var(--accent-1), var(--secondary-1));
+    opacity: 0.5;
+  }
+  
+  /* Brand Styles */
+  .brand-name{
+    font-family: 'Londrina Solid', sans-serif;
+    /* Add any other styles for 'Dezemba' if needed */
+  }
+  
+  .brand-extension {
+    font-family: 'Londrina Solid', sans-serif;
+    color: var(--accent-1);
+    /* Add any other styles for '.io' if needed */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .not-found-container {
+      padding: 50px;
+    }
+    .landing-button {
+      width: 100px;
+    }
+    /* Add additional responsive styles as needed */
+  }
+  

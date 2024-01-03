@@ -9,11 +9,13 @@ import { Router } from '@angular/router';
 export class LandingComponent {
   constructor(private router: Router) {}
 
+  // Navigate to the login page
   navigateToLogin(): void {
-    this.router.navigate(['/login']); // Change '/login' to your actual login path
+    this.router.navigate(['/login']); // Replace with your actual login path
   }
 
+  // Navigate to the register page
   navigateToRegister(): void {
-    this.router.navigate(['/register']); // Change '/register' to your actual register path
+    this.router.navigate(['/register']); // Replace with your actual register path
   }
 }
