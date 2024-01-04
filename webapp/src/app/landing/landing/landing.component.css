@@ -14,8 +14,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 5%;
   position: sticky;
+  height: 60px;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -23,7 +24,7 @@
 
 /* Logo style */
 .logo {
-  height: 70px;
+  height: 50px;
   padding-right: 24px;
 }
 
@@ -130,4 +131,10 @@ button {
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   background-color: white;
+}
+
+
+.extra-content {
+  height: 200vh; /* This will make the div larger than the viewport height (200% of viewport height) */
+  /* Add any other styling if needed */
 }

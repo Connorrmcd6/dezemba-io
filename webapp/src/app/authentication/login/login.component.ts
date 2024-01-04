@@ -32,4 +32,10 @@ export class LoginComponent {
   navigateToNotFound(): void {
     this.router.navigate(['/not-found']); // Replace '/not-found' with your actual not-found path
   }
+
+  // Navigate to the home page (ensure this path exists or add error handling)
+  navigateToHome(): void {
+    this.router.navigate(['/home']); // Replace '/home' with your actual not-found path
+  }
+
 }
