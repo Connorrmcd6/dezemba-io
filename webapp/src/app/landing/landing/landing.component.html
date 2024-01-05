@@ -1,28 +1,26 @@
 <header class="landing-header">
   <!-- Top Navigation Bar -->
-  <nav class="top-navigation">
+  <nav class="top-navigation mat-elevation-z2">
     <div class="left-section">
       <img class="logo" src="../../assets/svg/dezemba-logo-with-text.svg" alt="Logo">
-      <div class="dropdown">
-        <button class="dropdown-btn">Products</button>
-        <div class="dropdown-content">
-          <a href="#">Leave Tracking</a>
-          <a href="#">Attendance Tracking (coming soon)</a>
-          <a href="#">OKR/KPI Tracking (coming soon)</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropdown-btn">Pricing</button>
-        <div class="dropdown-content">
-          <a href="#">Plan 1</a>
-          <a href="#">Plan 2</a>
-          <a href="#">Plan 3</a>
-        </div>
-      </div>
+      <mat-form-field class="dropdown">
+        <mat-select placeholder="Products">
+          <mat-option *ngFor="let product of products" [value]="product.value">
+            {{ product.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="dropdown">
+        <mat-select placeholder="Pricing">
+          <mat-option *ngFor="let plan of plans" [value]="plan.value">
+            {{ plan.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
     <div class="right-section">
-      <button class="signin-btn" (click)="navigateToLogin()">Login</button>
-      <button class="register-btn" (click)="navigateToRegister()">Register</button>
+      <button mat-raised-button color="primary" (click)="navigateToLogin()">Login</button>
+      <button mat-raised-button color="accent" (click)="navigateToRegister()">Register</button>
     </div>
   </nav>
 

@@ -12,13 +12,8 @@ export class NotFoundComponent {
 
   constructor(private router: Router) {}
 
-  // Method to navigate to the landing page
+  // Navigate to the landing page
   navigateToLanding(): void {
-    this.router.navigate([this.landingPageRoute])
-      .catch(err => {
-        console.error('Error navigating to the landing page:', err);
-        // Implement fallback strategy or error handling, e.g., redirect to a default route
-        // this.router.navigate(['/default-route']);
-      });
+    this.router.navigate(['/landing-page']); // Replace '/landing' with your actual landing path
   }
 }

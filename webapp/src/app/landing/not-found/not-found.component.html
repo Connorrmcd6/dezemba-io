@@ -1,8 +1,13 @@
-<p>home works!</p>
-<div>
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-</div>
+<mat-card class="not-found-card">
+    <mat-card-header>
+      <mat-card-title>404 - Page Not Found</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Oops! The page you're looking for does not exist.</p>
+      <p>Please check the URL or navigate back to the home page.</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="navigateToLanding()">Go to Home</button>
+    </mat-card-actions>
+  </mat-card>
+  
