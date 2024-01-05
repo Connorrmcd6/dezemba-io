@@ -1,0 +1,176 @@
+// theme generated with https://www.realtimecolors.com/?colors=02102c-dcebfe-063684-ce59f8-f00aca&fonts=Poppins-Poppins
+// revisit to get dark theme if needed
+
+$primary-palette: (
+ 50: #e6eaf4,
+ 100: #c0c9e3,
+ 200: #97a7d1,
+ 300: #6e85be,
+ 400: #4d6ab1,
+ 500: #2651a5,
+ 600: #1f499c,
+ 700: #134090,
+ 800: #063684,
+ 900: #00266e,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   400: white,
+   500: white,
+   600: white,
+   700: white,
+   800:  white,
+   900:  white,
+ )
+);
+
+
+$secondary-palette: (
+ 50: #fee0f6,
+ 100: #fab0e7,
+ 200: #f675d8,
+ 300: #f00aca,
+ 400: #ea00bf,
+ 500: #da00af,
+ 600: #cb00ad,
+ 700: #b600a9,
+ 800: #b600a9,
+ 900: #7f009d,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   400: rgba(black, 0.87),
+   500: white,
+   600: white,
+   700: white,
+   800:  white,
+   900:  white,
+ )
+);
+
+$danger-palette: (
+ 50: #ffeaed,
+ 100: #ffcbd0,
+ 200: #fb9695,
+ 300: #f46b6b,
+ 400: #ff4444,
+ 500: #ff2b23,
+ 600: #f61b25,
+ 700: #e4041f,
+ 800: #d70017,
+ 900: #c70007,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   400: rgba(black, 0.87),
+   500: rgba(black, 0.87),
+   600: rgba(black, 0.87),
+   700: white,
+   800:  white,
+   900:  white,
+ )
+);
+
+$warning-palette: (
+ 50: #fff9e4,
+ 100: #ffeeb9,
+ 200: #ffe48d,
+ 300: #ffda62,
+ 400: #ffd145,
+ 500: #ffc939,
+ 600: #ffbb33,
+ 700: #fea92f,
+ 800: #fd992c,
+ 900: #fb7d27,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   400: rgba(black, 0.87),
+   500: rgba(black, 0.87),
+   600: rgba(black, 0.87),
+   700: rgba(black, 0.87),
+   800: rgba(black, 0.87),
+   900: rgba(black, 0.87),
+ )
+);
+
+$success-palette: (
+ 50: #e3f7e7,
+ 100: #bdecc3,
+ 200: #8fdf9c,
+ 300: #57d372,
+ 400: #00c850,
+ 500: #00bd29,
+ 600: #00ad1f,
+ 700: #009b0d,
+ 800: #008a00,
+ 900: #006a00,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   400: rgba(black, 0.87),
+   500: rgba(black, 0.87),
+   600: rgba(black, 0.87),
+   700: white,
+   800:  white,
+   900:  white,
+ )
+);
+
+$info-palette: (
+ 50: #e1f5fb,
+ 100: #b3e5f5,
+ 200: #82d4ee,
+ 300: #55c2e8,
+ 400: #33B5E5,
+ 500: #11a9e2,
+ 600: #079bd4,
+ 700: #0088c1,
+ 800: #0077ad,
+ 900: #00588e,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   400: rgba(black, 0.87),
+   500: rgba(black, 0.87),
+   600: rgba(black, 0.87),
+   700: rgba(black, 0.87),
+   800:  white,
+   900:  white,
+ )
+);
+
+
+// $my-primary: mat.define-palette($primary-palette, 800);
+// $my-accent: mat.define-palette($secondary-palette, 300, 200, 500);
+// $my-warn: mat.define-palette($warning-palette);
+
+// $my-theme: mat.define-light-theme((
+//  color: (
+//    primary: $my-primary,
+//    accent: $my-accent,
+//    warn: $my-warn,
+//  ),
+//  typography: mat.define-typography-config(),
+//  density: 0,
+// ));
+
+// @include mat.core-theme($my-theme);
+// @include mat.button-theme($my-theme);
+
+// html, body { height: 100%;}
+// body {margin: 0; font-family: Robot0, "Helvetica Neue", sans-seriff}
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
