@@ -1,21 +1,17 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  
   lastThreeLetters: string = '';
 
   constructor(private router: Router) {
-    const titleText = 'Welcome to dezemba.io'; // Replace with your actual title
-    if (titleText.length > 3) {
-      // Extract the last three letters from the title
-      this.lastThreeLetters = titleText.slice(-3);
-    }
+  
   }
 
   // Navigate to the registration page

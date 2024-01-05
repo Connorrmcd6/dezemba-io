@@ -1,44 +1,24 @@
-<div class="login-container">
-    <form class="login-form" (ngSubmit)="navigateToHome()">
-      <!-- Back button -->
-      <div class="back-button-container" (click)="navigateToLanding()" role="button" tabindex="0">
-        <div class="back-button">
-          <mat-icon aria-label="Back">arrow_back</mat-icon>
-          <span>Back</span>
-        </div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form >
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input type="text" matInput placeholder="Enter your username" formControlName="username" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Enter your password" formControlName="password" required>
+        <!-- Consider adding a password visibility toggle -->
+        <!-- Example: <button mat-icon-button [attr.aria-label]="'Toggle password visibility'" (click)="togglePasswordVisibility()"> -->
+        <!-- Insert eye icon or a button to toggle password visibility -->
+      </mat-form-field>
+      <div class="button">
+        <button type="submit" mat-raised-button color="primary">Login</button>
       </div>
-  
-      <!-- Logo -->
-      <img class="logo" src="../../assets/svg/dezemba-logo.svg" alt="Logo">
-  
-      <!-- Form Title -->
-      <h2 class="form-title" [attr.data-text]="lastThreeLetters">Welcome to dezemba</h2>
-  
-      <!-- Email Input -->
-      <mat-form-field appearance="fill">
-        <input matInput type="text" id="username" name="email" placeholder="Email" required>
-      </mat-form-field>
-  
-      <!-- Password Input -->
-      <mat-form-field appearance="fill">
-        <input matInput type="password" id="password" name="password" placeholder="Password" required>
-      </mat-form-field>
-  
-      <!-- Sign In Button -->
-      <button mat-raised-button color="primary" type="submit">SIGN IN</button>
-  
-      <!-- Navigation Links -->
-      <nav>
-        <!-- Forgot Password Link -->
-        <p class="login-bottom-text">
-          <a (click)="navigateToNotFound()" role="button" tabindex="0">Forgot Password (non-functional)</a>
-        </p>
-        
-        <!-- Create Account Link -->
-        <p class="login-bottom-text">
-          <a (click)="navigateToRegister()" role="button" tabindex="0">No account? Create one</a>
-        </p>
-      </nav>
     </form>
-  </div>
-  
+  </mat-card-content>
+</mat-card>
