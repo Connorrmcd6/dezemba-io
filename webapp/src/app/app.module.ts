@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 // custom modules
-// import { AuthenticationModule } from './authentication/authentication.module';
-// import { LandingModule } from './landing/landing.module';
-// import { HomeModule } from './home/home.module';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 // standard modules 
 import { HttpClientModule } from '@angular/common/http';
@@ -24,6 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    CoreModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
