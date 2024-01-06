@@ -13,7 +13,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$dezemba-primary: mat.define-palette($primary-palette);
+$dezemba-primary: mat.define-palette($primary-palette, 800, 500, 900);
 $dezemba-accent: mat.define-palette($secondary-palette, 300, 200, 500);
 
 // The warn palette is optional (defaults to red).

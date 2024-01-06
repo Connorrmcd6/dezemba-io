@@ -1,1 +1,65 @@
-<p>header works!</p>
+<div class="header-wrapper">
+    <mat-toolbar class="header">
+        <div class="menu">
+            <img class="logo" src="../../assets/svg/dezemba-logo-with-text.svg" alt="Logo">
+            <button class="menu-button" mat-button [matMenuTriggerFor]="products">Products</button>
+            <mat-menu #products="matMenu">
+            <button mat-menu-item>Leave Tracking</button>
+            <button mat-menu-item>OKR Tracking (coming soon)</button>
+            <button mat-menu-item>Time Tracking (coming soon)</button>
+            </mat-menu>
+
+            <button class="menu-button" mat-button [matMenuTriggerFor]="prices">Pricing</button>
+            <mat-menu #prices="matMenu">
+            <button mat-menu-item>Free Plan</button>
+            <button mat-menu-item>Medium Plan</button>
+            <button mat-menu-item>Enterprise Plan</button>
+            </mat-menu>
+        </div>
+        <div class="button-row">
+            <button mat-raised-button color="primary">Login</button>
+            <button mat-raised-button color="accent">Register</button>
+        </div>
+
+        <div class="hidden-header-items">
+            <button mat-icon-button [matMenuTriggerFor]="collapsedMenu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #collapsedMenu="matMenu">
+              <button mat-menu-item mat-menu-item [matMenuTriggerFor]="products"><mat-icon>shopping_cart</mat-icon><span>Products</span></button>
+              <button mat-menu-item mat-menu-item [matMenuTriggerFor]="prices"><mat-icon>credit_card</mat-icon><span>Pricing</span></button>
+
+
+              <mat-menu #products="matMenu">
+                <button mat-menu-item>Leave Tracking</button>
+                <button mat-menu-item>OKR Tracking (coming soon)</button>
+                <button mat-menu-item>Time Tracking (coming soon)</button>
+                </mat-menu>
+
+                <mat-menu #prices="matMenu">
+                  <button mat-menu-item>Free Plan</button>
+                  <button mat-menu-item>Medium Plan</button>
+                  <button mat-menu-item>Enterprise Plan</button>
+                  </mat-menu>
+
+                <div class="collapsed-button-container">
+                  <button mat-raised-button color="primary">Login</button>
+                  <button mat-raised-button color="accent">Register</button>
+                </div>
+              </mat-menu>
+
+        </div>
+    </mat-toolbar>
+</div>
+<div class="body-wrapper">
+    <div class="body">
+        <div class="showcase-container">
+            <p>showcase content here</p>
+        </div>
+        <div class="flagship-feature-container">
+            <span>feature 1</span>
+            <span>feature 2</span>
+            <span>feature 3</span>
+        </div>
+    </div>
+</div>

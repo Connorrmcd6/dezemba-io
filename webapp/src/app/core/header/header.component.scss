@@ -1,0 +1,81 @@
+/* General button styles */
+.button-row .mat-mdc-button-base,
+.collapsed-button-container button {
+    margin: 8px; /* Apply margin to buttons */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1280px;
+    border-radius: 16px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hidden-header-items {
+    display: none;
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    margin-left: 20px;
+}
+
+/* Collapsed menu styles */
+@media screen and (max-width: 900px) {
+    .menu-button,
+    .button-row {
+        display: none;
+    }
+
+    .hidden-header-items {
+        display: block;
+    }
+}
+
+/* Body styles */
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.body {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+}
+
+.showcase-container,
+.flagship-feature-container {
+    flex: 1; /* Use flex to fill available space */
+    padding: 10px;
+}
+
+.showcase-container {
+    height: 500px;
+    background-color: lightblue;
+}
+
+.flagship-feature-container {
+    background-color: lightcoral;
+}
