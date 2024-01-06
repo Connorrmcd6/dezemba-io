@@ -1,0 +1,29 @@
+.app-footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    max-width: 1280px;
+    margin: 0 auto; /* Center the footer */
+    width: 100%; /* Ensure the footer takes full width if the screen is smaller than 1280px */
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ddd;
+}
