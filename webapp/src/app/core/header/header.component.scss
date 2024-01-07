@@ -1,0 +1,127 @@
+/* General button styles */
+.button-row .mat-mdc-button-base,
+.collapsed-button-container button {
+    margin: 8px; /* Apply margin to buttons */
+}
+
+header {
+    margin-top: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header appears above other content */
+    background-color: white; /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); ;
+}
+/* Header styles */
+.header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header appears above other content */
+    background-color: white; /* Set your desired background color */
+}
+
+
+.max-width-content {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hidden-header-items {
+    display: none;
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    margin-left: 20px;
+}
+
+/* Collapsed menu styles */
+@media screen and (max-width: 900px) {
+    .menu-button,
+    .button-row {
+        display: none;
+    }
+
+    .hidden-header-items {
+        display: block;
+    }
+}
+
+/* Body styles */
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.body {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+    padding:10px
+}
+
+.showcase-container,
+.flagship-feature-container {
+    flex: 1; /* Use flex to fill available space */
+    padding: 10px;
+}
+
+.showcase-container {
+    height: 500px;
+    background-color: lightblue;
+}
+
+.flagship-feature-container {
+    display: flex;
+    justify-content: space-between; /* To equally space cards horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if they don't fit */
+    gap: 20px; /* Space between cards */
+}
+
+
+.example-card {
+    max-width: 400px;
+  }
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+/* Collapsed menu styles */
+@media screen and (max-width: 400px) {
+    .menu-button,
+    .button-row {
+        display: none;
+    }
+
+    .hidden-header-items {
+        display: block;
+    }
+}
