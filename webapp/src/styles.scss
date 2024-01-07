@@ -18,6 +18,9 @@ $dezemba-accent: mat.define-palette($secondary-palette, 300, 200, 500);
 
 // The warn palette is optional (defaults to red).
 $dezemba-warn: mat.define-palette($warning-palette);
+$dezemba-danger: mat.define-palette($danger-palette);
+$dezemba-success: mat.define-palette($success-palette);
+$dezemba-info: mat.define-palette($info-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -26,6 +29,9 @@ $dezemba-theme: mat.define-light-theme((
     primary: $dezemba-primary,
     accent: $dezemba-accent,
     warn: $dezemba-warn,
+    danger: $dezemba-danger,
+    success: $dezemba-success,
+    info: $dezemba-info,
   )
 ));
 
@@ -37,4 +43,86 @@ $dezemba-theme: mat.define-light-theme((
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 14px;
+}
+
+
+.display-4 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: light;
+  font-size: 112px;
+}
+
+.display-3 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 56px;
+}
+
+.display-2 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 45px;
+}
+
+.display-1 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 34px;
+}
+
+.headline {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 24px;
+}
+
+.title {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: medium;
+  font-size: 20px;
+}
+
+.subheading-2 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+}
+
+.subheading-1 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+}
+
+.body-2 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: medium;
+  font-size: 14px;
+}
+
+.body-1 {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 14px;
+}
+
+caption {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 12px;
+}
+
+button {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: medium;
+  font-size: 14px;
+}
+
+input {
+  font-family: Roboto, Noto,sans-serif;
+  font-weight: regular;
+  font-size: 12px;
 }

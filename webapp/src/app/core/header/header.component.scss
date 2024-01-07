@@ -10,12 +10,18 @@ header {
     top: 0;
     z-index: 1000; /* Ensure the header appears above other content */
     background-color: white; /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); ;
 }
 /* Header styles */
 .header-toolbar {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    margin-top: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header appears above other content */
+    background-color: white; /* Set your desired background color */
 }
 
 
@@ -106,4 +112,16 @@ header {
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
+}
+
+/* Collapsed menu styles */
+@media screen and (max-width: 400px) {
+    .menu-button,
+    .button-row {
+        display: none;
+    }
+
+    .hidden-header-items {
+        display: block;
+    }
 }
