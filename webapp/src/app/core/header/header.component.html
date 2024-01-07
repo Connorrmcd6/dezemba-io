@@ -1,67 +1,135 @@
 <header>
     <div class="header-wrapper">
-        <mat-toolbar class="header">
-            <div class="menu">
-                <img class="logo" src="../../assets/svg/dezemba-logo-with-text.svg" alt="Logo">
-                <button class="menu-button" mat-button [matMenuTriggerFor]="products">Products</button>
-                <mat-menu #products="matMenu">
-                <button mat-menu-item>Leave Tracking</button>
-                <button mat-menu-item>OKR Tracking (coming soon)</button>
-                <button mat-menu-item>Time Tracking (coming soon)</button>
-                </mat-menu>
-
-                <button class="menu-button" mat-button [matMenuTriggerFor]="prices">Pricing</button>
-                <mat-menu #prices="matMenu">
-                <button mat-menu-item>Free Plan</button>
-                <button mat-menu-item>Medium Plan</button>
-                <button mat-menu-item>Enterprise Plan</button>
-                </mat-menu>
-            </div>
-            <div class="button-row">
-                <button mat-raised-button color="primary">Login</button>
-                <button mat-raised-button color="accent">Register</button>
-            </div>
-
-            <div class="hidden-header-items">
-                <button mat-icon-button [matMenuTriggerFor]="collapsedMenu">
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <mat-menu #collapsedMenu="matMenu">
-                <button mat-menu-item mat-menu-item [matMenuTriggerFor]="products"><mat-icon>shopping_cart</mat-icon><span>Products</span></button>
-                <button mat-menu-item mat-menu-item [matMenuTriggerFor]="prices"><mat-icon>credit_card</mat-icon><span>Pricing</span></button>
-
-
-                <mat-menu #products="matMenu">
-                    <button mat-menu-item>Leave Tracking</button>
-                    <button mat-menu-item>OKR Tracking (coming soon)</button>
-                    <button mat-menu-item>Time Tracking (coming soon)</button>
+        <mat-toolbar class="header-toolbar mat-elevation-z1 topo">
+            <div class="max-width-content">
+                <div class="menu">
+                    <img class="logo" src="../../assets/svg/dezemba-logo-with-text.svg" alt="Logo">
+                    <button class="menu-button" mat-button [matMenuTriggerFor]="products">Products</button>
+                    <mat-menu #products="matMenu">
+                        <button mat-menu-item>Leave Tracking</button>
+                        <button mat-menu-item>OKR Tracking (coming soon)</button>
+                        <button mat-menu-item>Time Tracking (coming soon)</button>
                     </mat-menu>
-
+    
+                    <button class="menu-button" mat-button [matMenuTriggerFor]="prices">Pricing</button>
                     <mat-menu #prices="matMenu">
-                    <button mat-menu-item>Free Plan</button>
-                    <button mat-menu-item>Medium Plan</button>
-                    <button mat-menu-item>Enterprise Plan</button>
+                        <button mat-menu-item>Free Plan</button>
+                        <button mat-menu-item>Medium Plan</button>
+                        <button mat-menu-item>Enterprise Plan</button>
                     </mat-menu>
-
-                    <div class="collapsed-button-container">
+                </div>
+    
+                <div class="button-row">
                     <button mat-raised-button color="primary">Login</button>
                     <button mat-raised-button color="accent">Register</button>
-                    </div>
-                </mat-menu>
-
+                </div>
+    
+                <div class="hidden-header-items">
+                    <button mat-icon-button [matMenuTriggerFor]="collapsedMenu">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                    <mat-menu #collapsedMenu="matMenu">
+                        <button mat-menu-item mat-menu-item [matMenuTriggerFor]="products">
+                            <mat-icon>shopping_cart</mat-icon>
+                            <span>Products</span>
+                        </button>
+                        <button mat-menu-item mat-menu-item [matMenuTriggerFor]="prices">
+                            <mat-icon>credit_card</mat-icon>
+                            <span>Pricing</span>
+                        </button>
+    
+                        <mat-menu #products="matMenu">
+                            <button mat-menu-item>Leave Tracking</button>
+                            <button mat-menu-item>OKR Tracking (coming soon)</button>
+                            <button mat-menu-item>Time Tracking (coming soon)</button>
+                        </mat-menu>
+    
+                        <mat-menu #prices="matMenu">
+                            <button mat-menu-item>Free Plan</button>
+                            <button mat-menu-item>Medium Plan</button>
+                            <button mat-menu-item>Enterprise Plan</button>
+                        </mat-menu>
+    
+                        <div class="collapsed-button-container">
+                            <button mat-raised-button color="primary">Login</button>
+                            <button mat-raised-button color="accent">Register</button>
+                        </div>
+                    </mat-menu>
+                </div>
             </div>
         </mat-toolbar>
     </div>
+</header>
+
+
+<body>
     <div class="body-wrapper">
         <div class="body">
             <div class="showcase-container">
                 <p>showcase content here</p>
             </div>
             <div class="flagship-feature-container">
-                <span>feature 1</span>
-                <span>feature 2</span>
-                <span>feature 3</span>
+                <!-- Filler content -->
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>Shiba Inu 1</mat-card-title>
+                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                      <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                  </mat-card>
+
+                  <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>Shiba Inu 2</mat-card-title>
+                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                      <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                  </mat-card>
+
+                  <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>Shiba Inu 3</mat-card-title>
+                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                      <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                  </mat-card>
             </div>
         </div>
     </div>
-</header>
+</body>
