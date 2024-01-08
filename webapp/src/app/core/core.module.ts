@@ -12,12 +12,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Components
 import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LandingComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +30,7 @@ import { HeaderComponent } from './header/header.component';
     MatToolbarModule
   ],
   exports: [
-    HeaderComponent,
+    LandingComponent,
     FooterComponent
   ]
 })

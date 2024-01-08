@@ -1,6 +1,6 @@
 <header>
-    <div class="header-wrapper">
-        <mat-toolbar class="header-toolbar">
+    <div class="landing-wrapper">
+        <mat-toolbar class="landing-toolbar">
             <div class="max-width-content">
                 <div class="menu">
                     <img class="logo" src="../../assets/svg/dezemba-logo-with-text.svg" alt="Logo">
@@ -20,11 +20,11 @@
                 </div>
     
                 <div class="button-row">
-                    <button mat-stroked-button color="primary">Login</button>
+                    <button mat-stroked-button routerLink="login" color="primary">Login</button>
                     <button mat-raised-button color="accent">Register</button>
                 </div>
     
-                <div class="hidden-header-items">
+                <div class="hidden-landing-items">
                     <button mat-icon-button [matMenuTriggerFor]="collapsedMenu">
                         <mat-icon>menu</mat-icon>
                     </button>

@@ -12,15 +12,15 @@ header {
     background-color: white; /* Set your desired background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); ;
 }
-/* Header styles */
-.header-toolbar {
+/* Landing styles */
+.landing-toolbar {
     display: flex;
     justify-content: space-between;
     margin: auto;
     margin-top: auto;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure the header appears above other content */
+    z-index: 1000; /* Ensure the landing appears above other content */
     background-color: white; /* Set your desired background color */
 }
 
@@ -33,7 +33,7 @@ header {
     margin: auto;
 }
 
-.header-wrapper {
+.landing-wrapper {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -41,7 +41,7 @@ header {
     max-width: 100%;
 }
 
-.hidden-header-items {
+.hidden-landing-items {
     display: none;
 }
 
@@ -63,7 +63,7 @@ header {
         display: none;
     }
 
-    .hidden-header-items {
+    .hidden-landing-items {
         display: block;
     }
 }
@@ -121,7 +121,7 @@ header {
         display: none;
     }
 
-    .hidden-header-items {
+    .hidden-landing-items {
         display: block;
     }
 }
