@@ -11,39 +11,39 @@
           <img src="../assets/svg/dezemba-logo.svg" alt="Logo">
       </div>
       <div class="stepper-container">
-        <mat-stepper [linear]="isLinear" #stepper>
+        <mat-stepper [linear]="isLinear" #stepper color="primary">
           <mat-step [stepControl]="firstFormGroup">
             <form [formGroup]="firstFormGroup">
               <ng-template matStepLabel></ng-template>
-              <mat-form-field>
+              <mat-form-field color="accent">
                 <input matInput type="text" placeholder="Company Name" formControlName="firstCtrl" required>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field color="accent">
                 <input matInput type="text" placeholder="Country" formControlName="firstCtrl" required>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field color="accent">
                 <input matInput type="text" placeholder="Placeholder" formControlName="firstCtrl" required>
               </mat-form-field>
-              <div>
+              <div class="button-row">
                 <button mat-stroked-button color="primary" matStepperNext>Next</button>
               </div>
             </form>
           </mat-step>
           <mat-step [stepControl]="secondFormGroup" label="">
             <form [formGroup]="secondFormGroup">
-              <mat-form-field>
+              <mat-form-field color="accent">
                 <input matInput type="text" formControlName="secondCtrl" placeholder="Email" required>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field color="accent">
                 <input type="password" matInput formControlName="secondCtrl" placeholder="Password" required>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field color="accent">
                 <input matInput type="password" formControlName="secondCtrl" placeholder="Confirm Password" required>
               </mat-form-field>
             </form>
             <div class="button-row">
               <button mat-stroked-button color="primary" matStepperPrevious>Back</button>
-              <button mat-stroked-button color="accent" (click)="stepper.reset()">Reset</button>
+              <button mat-raised-button color="accent">Register</button>
             </div>
           </mat-step>
         </mat-stepper>
