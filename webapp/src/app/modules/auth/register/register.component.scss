@@ -1,0 +1,73 @@
+.register-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #7BACF9, #CE59F8);
+}
+
+.register-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px
+  }
+
+/* Styles for the mat-card */
+mat-card {
+    width: 300px; /* Set your preferred width */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+/* Styles for the logo container */
+.logo-container {
+    text-align: center;
+    margin-bottom: 0px; /* Adjust spacing between logo and form */
+  }
+  
+  /* Styles for the logo image */
+  .logo-container img {
+    max-width: 150px; /* Adjust the maximum width of the logo */
+    height: auto;
+  }
+
+  .mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+
+  .bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.login-message {
+    margin-right: 10px; /* Add some space between text and button */
+    font-size: 1em; /* Adjust font size as needed */
+    /* You can add other styles like color, font-weight, etc., as per your design */
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Adjust the space between buttons */
+}
