@@ -29,6 +29,13 @@ mat-card {
     justify-content: flex-end; /* Align items to the right */
   }
 
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
 /* Styles for the logo container */
 .logo-container {
     text-align: center;
@@ -57,3 +64,20 @@ mat-card {
     align-items: center;
     margin-bottom: 40px; /* Adjust spacing between logo and text */
   }
+
+  .bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.account-message {
+    margin-right: 10px; /* Add some space between text and button */
+    font-size: 1em; /* Adjust font size as needed */
+    /* You can add other styles like color, font-weight, etc., as per your design */
+}
+
+// .register-button {
+//     /* Add specific styles to the button if needed */
+// }
