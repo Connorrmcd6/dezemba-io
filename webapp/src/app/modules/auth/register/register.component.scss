@@ -33,6 +33,7 @@ mat-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
   }
 
@@ -62,7 +63,7 @@ mat-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px; /* Adjust spacing between logo and text */
+    margin-bottom: 10px; /* Adjust spacing between logo and text */
   }
   
 
