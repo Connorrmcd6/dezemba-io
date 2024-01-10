@@ -14,6 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  hide1 = true;
+  hide2 = true;
   constructor(
     private route: ActivatedRoute,
     private location: Location,

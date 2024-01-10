@@ -13,13 +13,13 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 20px
+    padding: 30px
   }
 
 /* Styles for the mat-card */
 mat-card {
     width: 300px; /* Set your preferred width */
-    padding: 20px;
+    padding: 10px 10px 20px 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   }
@@ -48,8 +48,21 @@ mat-card {
     height: auto;
   }
 
-  .mat-stepper-horizontal {
-    margin-top: 8px;
+  .welcome {
+    color: #063684;
+    font-family: "Londrina-Solid", Roboto, Noto, sans-serif; 
+  }
+
+  .extension {
+    color: #f00aca;
+    font-family: "Londrina-Solid", Roboto, Noto, sans-serif; 
+  }
+
+  .logo-welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; /* Adjust spacing between logo and text */
   }
   
 
@@ -57,11 +70,10 @@ mat-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Adjust margin as needed */
 }
 
 .login-message {
-    margin-right: 10px; /* Add some space between text and button */
+    margin-right: 5px; /* Add some space between text and button */
     font-size: 1em; /* Adjust font size as needed */
     /* You can add other styles like color, font-weight, etc., as per your design */
 }
@@ -70,4 +82,5 @@ mat-card {
     display: flex;
     justify-content: flex-end; /* Align buttons to the right */
     gap: 10px; /* Adjust the space between buttons */
+    padding-bottom: 4px;
 }
