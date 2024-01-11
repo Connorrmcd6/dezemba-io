@@ -12,16 +12,15 @@ header {
     background-color: white; /* Set your desired background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); ;
 }
-/* Header styles */
-.header-toolbar {
+/* Landing styles */
+.landing-toolbar {
     display: flex;
     justify-content: space-between;
     margin: auto;
     margin-top: auto;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure the header appears above other content */
-    background-color: white; /* Set your desired background color */
+    z-index: 1000; /* Ensure the landing appears above other content */
 }
 
 
@@ -33,7 +32,7 @@ header {
     margin: auto;
 }
 
-.header-wrapper {
+.landing-wrapper {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -41,7 +40,7 @@ header {
     max-width: 100%;
 }
 
-.hidden-header-items {
+.hidden-landing-items {
     display: none;
 }
 
@@ -63,7 +62,7 @@ header {
         display: none;
     }
 
-    .hidden-header-items {
+    .hidden-landing-items {
         display: block;
     }
 }
@@ -75,6 +74,11 @@ header {
     margin: auto;
     width: 100%;
     max-width: 100%;
+    background: #f5f5f8;
+}
+
+.mdc-button__label {
+    font-weight: 900;
 }
 
 .body {
@@ -84,6 +88,11 @@ header {
     max-width: 1280px;
     flex-direction: column;
     padding:10px
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    background-color: white;
+    color: #063684;
 }
 
 .showcase-container,
@@ -121,7 +130,7 @@ header {
         display: none;
     }
 
-    .hidden-header-items {
+    .hidden-landing-items {
         display: block;
     }
 }

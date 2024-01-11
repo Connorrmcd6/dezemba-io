@@ -1,0 +1,41 @@
+<div class="login-container">
+    <div class="login-card-content">
+        <mat-card>
+            <nav>
+                <button  mat-icon-button colour="primary" (click)="goBack()">
+                  <mat-icon>arrow_back</mat-icon>
+                </button>
+            </nav>
+            <div class="logo-welcome-container">
+                <div class="logo-container">
+                    <img src="../assets/svg/dezemba-logo.svg" alt="Logo">
+                </div>
+                <div class="welcome-container">
+                    <span class="welcome title">Welcome to dezemba</span>
+                    <span class="extension title">.io</span>
+                </div>
+            </div>
+            <mat-card-content>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email" type="text">
+                    <mat-icon color="primary" matSuffix>mail_outline</mat-icon>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <button color="primary" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <div class="button-row">
+                    <button mat-raised-button color="accent">Login</button>
+                </div>
+            </mat-card-content>
+            <div class="bottom-content">
+                <span class="account-message">Don't have an account?</span>
+                <button mat-button color="accent" routerLink="/register">Register</button>
+            </div>
+        </mat-card>
+    </div>
+</div>

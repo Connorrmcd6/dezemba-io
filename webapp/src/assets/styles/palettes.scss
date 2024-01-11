@@ -52,7 +52,7 @@ $secondary-palette: (
  )
 );
 
-$danger-palette: (
+$warning-palette: (
  50: #ffeaed,
  100: #ffcbd0,
  200: #fb9695,
@@ -77,7 +77,7 @@ $danger-palette: (
  )
 );
 
-$warning-palette: (
+$danger-palette: (
  50: #fff9e4,
  100: #ffeeb9,
  200: #ffe48d,
@@ -151,26 +151,3 @@ $info-palette: (
    900:  white,
  )
 );
-
-
-// $my-primary: mat.define-palette($primary-palette, 800);
-// $my-accent: mat.define-palette($secondary-palette, 300, 200, 500);
-// $my-warn: mat.define-palette($warning-palette);
-
-// $my-theme: mat.define-light-theme((
-//  color: (
-//    primary: $my-primary,
-//    accent: $my-accent,
-//    warn: $my-warn,
-//  ),
-//  typography: mat.define-typography-config(),
-//  density: 0,
-// ));
-
-// @include mat.core-theme($my-theme);
-// @include mat.button-theme($my-theme);
-
-// html, body { height: 100%;}
-// body {margin: 0; font-family: Robot0, "Helvetica Neue", sans-seriff}
-// html, body { height: 100%; }
-// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
