@@ -1,11 +1,13 @@
 <div class="register-container">
   <div class="register-card-content">
     <mat-card>
-      <nav>
-        <button  mat-icon-button colour="primary" (click)="goBack()">
-          <mat-icon>arrow_back</mat-icon>
-        </button>
-    </nav>
+      <div class="back-button-row">
+        <nav>
+          <button  mat-icon-button colour="primary" (click)="goBack()">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+        </nav>
+      </div>
     <div class="logo-welcome-container">
       <div class="welcome-container">
         <span class="welcome title">Welcome to dezemba</span>
@@ -14,6 +16,8 @@
     </div>
       <div class="stepper-container">
         <mat-stepper headerPosition="bottom" labelPosition="bottom" [linear]="isLinear" #stepper color="primary">
+          
+          
           <mat-step [stepControl]="firstFormGroup">
             <form [formGroup]="firstFormGroup">
               <mat-form-field color="primary" appearance="outline">
@@ -36,6 +40,8 @@
               </div>
             </form>
           </mat-step>
+
+
           <mat-step [stepControl]="secondFormGroup">
             <form [formGroup]="secondFormGroup">
               <mat-form-field color="primary" appearance="outline">
@@ -57,12 +63,37 @@
                   <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
                 </button>
               </mat-form-field>
+              <div class="button-row">
+                <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+                <button mat-raised-button color="primary" matStepperNext>Next</button>
+              </div>
             </form>
-            <div class="button-row">
-              <button mat-raised-button color="primary" matStepperPrevious>Back</button>
-              <button mat-raised-button color="accent">Register</button>
-            </div>
           </mat-step>
+
+        <mat-step [stepControl]="thirdFormGroup">
+          <form [formGroup]="thirdFormGroup">
+            <mat-form-field color="primary" appearance="outline">
+              <mat-label>Change</mat-label>
+              <input matInput type="text" formControlName="thirdCtrl" placeholder="Email" required>
+              <mat-icon color="primary" matSuffix>mail_outline</mat-icon>
+            </mat-form-field>
+            <mat-form-field color="primary" appearance="outline">
+              <mat-label>These</mat-label>
+              <input matInput type="text" formControlName="thirdCtrl" placeholder="Email" required>
+              <mat-icon color="primary" matSuffix>mail_outline</mat-icon>
+            </mat-form-field>
+            <mat-form-field color="primary" appearance="outline">
+              <mat-label>Accordingly</mat-label>
+              <input matInput type="text" formControlName="thirdCtrl" placeholder="Email" required>
+              <mat-icon color="primary" matSuffix>mail_outline</mat-icon>
+            </mat-form-field>
+          </form>
+          <div class="button-row">
+            <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+            <button mat-raised-button color="accent">Register</button>
+          </div>
+        </mat-step>
+          
         </mat-stepper>
       </div>
   <div class="bottom-content">

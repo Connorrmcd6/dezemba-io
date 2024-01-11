@@ -76,6 +76,10 @@ header {
     max-width: 100%;
 }
 
+.mdc-button__label {
+    font-weight: 900;
+}
+
 .body {
     display: flex;
     margin: auto;
@@ -83,6 +87,11 @@ header {
     max-width: 1280px;
     flex-direction: column;
     padding:10px
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    background-color: white;
+    color: #063684;
 }
 
 .showcase-container,

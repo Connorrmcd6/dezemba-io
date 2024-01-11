@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import { RouterModule } from '@angular/router';
 import {MatStepperModule} from '@angular/material/stepper';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 
@@ -30,6 +31,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatStepperModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCheckboxModule
   ],
   exports: [
     LoginComponent,
