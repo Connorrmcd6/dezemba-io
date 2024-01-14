@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 
 // custom modules
 import { CoreModule } from './core/core.module';
-import { AuthModule } from './modules/auth/auth.module';
+import { AuthModule } from './feature/auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 
 // standard library modules 

@@ -2,17 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 //paths
-import { LoginComponent } from './modules/auth/login/login.component';
+import { LoginComponent } from './feature/auth/login/login.component';
 import { LandingComponent } from './core/landing/landing.component';
-import { RegisterComponent } from './modules/auth/register/register.component';
-import { HomeComponent } from './modules/home/home/home.component';
+import { RegisterComponent } from './feature/auth/register/register.component';
 
 
 const routes: Routes = [
   { path: '', component: LandingComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'home', component: HomeComponent},
 ];
 
 @NgModule({
