@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavigationComponent } from './navigation/navigation.component';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
@@ -9,7 +13,13 @@ import { NavigationComponent } from './navigation/navigation.component';
     NavigationComponent
   ],
   imports: [
-    CommonModule
-  ]// add exports later
+    CommonModule,
+    MatToolbarModule,
+    RouterModule,
+    MatSidenavModule
+  ],
+  exports: [
+    NavigationComponent
+  ]
 })
 export class SharedModule { }
