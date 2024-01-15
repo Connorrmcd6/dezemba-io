@@ -1,0 +1,31 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the landing appears above other content */
+}
+
+.max-width-content {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* General button styles */
+.button-row .mat-mdc-button-base,
+.collapsed-button-container button {
+    margin: 8px; /* Apply margin to buttons */
+}

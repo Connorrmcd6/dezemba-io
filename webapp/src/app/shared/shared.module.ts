@@ -5,6 +5,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MatToolbarModule,
     RouterModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule
   ],
   exports: [
     NavigationComponent
